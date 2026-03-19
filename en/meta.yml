@@ -1,14 +1,29 @@
-title: Project title in sentence case
+---
+title: Comic character
 hero_image: images/banner.png
-description: A short description of the project
+description: Create a superhero design website!
+version: 4
 listed: false
-pdf: false
+copyedit: false
+last_tested: '2021-03-26'
 steps:
-  - title: What you will make
-  - title: Step title
-    completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
-    completion:
-      - external
+- title: You will make
+- title: Add the footer to the home page
+  completion:
+    - engaged
+- title: Add the footer to the character page
+- title: Show the current year
+- title: Build the character form
+- title: Show the superhero summary
+- title: Let the user edit the summary
+- title: Check the form before creating
+- title: Add a light mode switch to the home page
+- title: Add a light mode switch to the character page
+- title: Save the light mode choice
+- title: Control the hero slider
+  completion:
+    - internal
+- title: Challenge
+  challenge: true
+  completion:
+    - external
