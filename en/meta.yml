@@ -1,14 +1,26 @@
-title: Project title in sentence case
+---
+title: Comic character
 hero_image: images/banner.png
-description: A short description of the project
+description: Create a superhero design website!
+version: 1
 listed: false
-pdf: false
+copyedit: false
+last_tested: '2026-03-17'
 steps:
-  - title: What you will make
-  - title: Step title
-    completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
-    completion:
-      - external
+- title: Step 1
+- title: Step 2
+  completion:
+  - engaged
+- title: Step 3
+- title: Step 4
+- title: Step 5
+- title: Step 6
+- title: Step 7
+- title: Step 8
+- title: Step 9
+- title: Step 10
+  completion:
+  - internal
+- title: Step 11
+  completion:
+  - external
