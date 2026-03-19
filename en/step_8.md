@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">Add a light mode switch to the character page</h2>
+<h2 class="c-project-heading--task">Add a light mode switch to the home page</h2>
 
-Add the same switch to `character.html` so both pages have the same theme control.
+Add a switch to `index.html` so the home page has a control for changing the colour theme.
 
 --- task ---
 
-Open `character.html` and add the switch container inside the header, below the navigation links.
+Open `index.html` and add the switch container inside the header, below the navigation links.
 
 --- /task ---
 
@@ -13,7 +13,7 @@ Open `character.html` and add the switch container inside the header, below the 
 --- code ---
 ---
 language: html
-filename: character.html
+filename: index.html
 line_numbers: true
 line_number_start: 20
 line_highlights: 20-26
@@ -33,6 +33,6 @@ line_highlights: 20-26
 
 --- task ---
 
-Open `character.html` and confirm the same switch now appears in that page header as well.
+Click Run and confirm a switch appears in the home page header, even though it does not change the colours yet.
 
 --- /task ---

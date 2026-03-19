@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">Add a light mode switch to the character page</h2>
+<h2 class="c-project-heading--task">Save the light mode choice</h2>
 
-Add the same switch to `character.html` so both pages have the same theme control.
+Use JavaScript and local storage to switch the page theme and remember the user’s choice.
 
 --- task ---
 
-Open `character.html` and add the switch container inside the header, below the navigation links.
+Open `scripts.js` and add the light mode switch constant, the `changeLightMode()` function, and a `DOMContentLoaded` listener.
 
 --- /task ---
 
@@ -12,19 +12,33 @@ Open `character.html` and add the switch container inside the header, below the 
 
 --- code ---
 ---
-language: html
-filename: character.html
+language: js
+filename: scripts.js
 line_numbers: true
-line_number_start: 20
-line_highlights: 20-26
+line_number_start: 55
+line_highlights: 56,58-60,62,64-65,67-68,70-73,75
 ---
-      <div class="switch-container">
-        <label class="switch">
-          <input onchange="changeLightMode()" type="checkbox" id="lightModeSwitch">
-          <span class="switch-slider"></span>
-        </label>
-        <span class="switch-label material-symbols-outlined">light_mode</span>
-      </div>
+// Create the constant for light mode
+const lightModeSwitch = document.querySelector("#lightModeSwitch");
+
+// Light mode function
+function changeLightMode() {
+  var isLightMode = lightModeSwitch.checked;
+
+  document.body.classList.toggle("light-mode");
+
+  localStorage.setItem("lightMode", isLightMode);
+}
+
+// Check local storage
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (localStorage.getItem("lightMode") == "true") {
+    document.body.classList.toggle("light-mode");
+    lightModeSwitch.checked = true;
+  }
+
+});
 --- /code ---
 
 </div>
@@ -33,6 +47,6 @@ line_highlights: 20-26
 
 --- task ---
 
-Open `character.html` and confirm the same switch now appears in that page header as well.
+Turn on light mode, refresh the page, and confirm the lighter colours stay enabled with the switch still checked.
 
 --- /task ---
