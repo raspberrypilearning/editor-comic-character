@@ -28,30 +28,6 @@ function changeSummary() {
   summary.style.display = "none";
 }
 
-// Function to check the character details form 
-const alertBox = document.querySelector("#alert");
-
-function checkForm(){
-
-  var alertMessage = "";
-
-  if (characterName.value == ""){
-    alertMessage = "Please enter a name"; 
-  } else if (characterAbility.value == "") {
-    alertMessage = "Please choose an ability";
-  } else if (characterOrigin.value == "") {
-    alertMessage = "Please write the origin story";
-  } 
-  
-  if (alertMessage != ""){
-    alertBox.innerText = alertMessage;
-    alertBox.style.display = "block";
-  } else {
-    alertBox.style.display = "none";
-    displaySummary();
-  }
-}
-
 // Create the constant for light mode
 const lightModeSwitch = document.querySelector("#lightModeSwitch");
 
