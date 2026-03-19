@@ -17,8 +17,8 @@ Code snippet 1 updates the form so the Create button runs `checkForm()` and ther
 language: html
 filename: character.html
 line_numbers: true
-line_number_start: 40
-line_highlights: 42-43
+line_number_start: 33
+line_highlights: 35-36
 ---
         <label for="origin-text">Origin Story:</label>
         <textarea id="origin-text" placeholder="Add your superhero origin story!"></textarea>
