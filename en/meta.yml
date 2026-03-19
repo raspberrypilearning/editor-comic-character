@@ -16,7 +16,7 @@ steps:
 - title: Build the character form
 - title: Show the superhero summary
 - title: Let the user edit the summary
-# - title: Check the form before creating
+- title: Check the form before creating
 - title: Add a light mode switch to the home page
 - title: Add a light mode switch to the character page
 - title: Save the light mode choice
