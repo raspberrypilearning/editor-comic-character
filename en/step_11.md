@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">Control the hero slider</h2>
+<h2 class="c-project-heading--task">Save the light mode choice</h2>
 
-Use JavaScript to move the hero slider backwards and forwards when the navigation buttons are clicked.
+Use JavaScript and local storage to switch the page theme and remember the user’s choice.
 
 --- task ---
 
-Open `scripts.js` and add the slider list, the current index variable, and the `changeHero()` function.
+Open `scripts.js` and add the light mode switch constant, the `changeLightMode()` function, and a `DOMContentLoaded` listener.
 
 --- /task ---
 
@@ -15,26 +15,30 @@ Open `scripts.js` and add the slider list, the current index variable, and the `
 language: js
 filename: scripts.js
 line_numbers: true
-line_number_start: 77
-line_highlights: 78-81,83-90,92,94
+line_number_start: 55
+line_highlights: 56,58-60,62,64-65,67-68,70-73,75
 ---
-// Change Hero function
-const heroSlides = document.querySelectorAll(".hero-slide");
-var currentHeroIndex = 0;
+// Create the constant for light mode
+const lightModeSwitch = document.querySelector("#lightModeSwitch");
 
-function changeHero(direction) {
+// Light mode function
+function changeLightMode() {
+  var isLightMode = lightModeSwitch.checked;
 
-  heroSlides[currentHeroIndex].classList.remove("active");
-  currentHeroIndex = currentHeroIndex + direction;
+  document.body.classList.toggle("light-mode");
 
-  if (currentHeroIndex < 0) {
-    currentHeroIndex = 2;
-  } else if (currentHeroIndex > 2) {
-    currentHeroIndex = 0;
+  localStorage.setItem("lightMode", isLightMode);
+}
+
+// Check local storage
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (localStorage.getItem("lightMode") == "true") {
+    document.body.classList.toggle("light-mode");
+    lightModeSwitch.checked = true;
   }
 
-  heroSlides[currentHeroIndex].classList.add("active");
-}
+});
 --- /code ---
 
 </div>
@@ -43,6 +47,6 @@ function changeHero(direction) {
 
 --- task ---
 
-Click the left and right hero buttons on the home page and confirm the active image changes each time, wrapping back to the start when needed.
+Run your code, then turn on light mode, refresh the page, and confirm the lighter colours stay enabled with the switch still checked.
 
 --- /task ---
