@@ -1,8 +1,10 @@
-<h2 class="c-project-heading--task">Add a new heading</h2>
+<h2 class="c-project-heading--task">Add the footer to the home page</h2>
+
+Add a copyright message to the footer of `index.html` so the home page has space for the current year.
 
 --- task ---
 
-Add a heading and intro text.
+Open `index.html` and add a paragraph inside the empty `<footer>`.
 
 --- /task ---
 
@@ -13,23 +15,20 @@ Add a heading and intro text.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 21
-line_highlights: 22-23
+line_number_start: 32
+line_highlights: 33
 ---
-
-    <main>
-      <h1>Design a superhero</h1>
-      <p>Create your own comic character using the character builder.</p>
-
-      <div class="hero-container">
-        ...
-      </div>
-    </main>
-
+    <footer>
+      <p>Ⓒ <span id="copyrightYear"></span> Malik Johnson - All Rights Reserved</p>
+    </footer>
 --- /code ---
 
 </div>
 
+<h2 class="c-project-heading--task">Test</h2>
+
 --- task ---
-**Test:** Run the homepage and check you can see the new heading and intro text above the hero images.
+
+Click Run and confirm the footer now shows a copyright message on the home page, even though the year is still blank.
+
 --- /task ---

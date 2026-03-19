@@ -1,36 +1,48 @@
-<h2 class="c-project-heading--task">Challenge</h2>
+<h2 class="c-project-heading--task">Control the hero slider</h2>
+
+Use JavaScript to move the hero slider backwards and forwards when the navigation buttons are clicked.
 
 --- task ---
-Personalise the summary message so it matches your character and your story.
---- /task ---
 
---- task ---
-Edit the summary text template so it sounds more like a comic book caption (you decide the style).
+Open `scripts.js` and add the slider list, the current index variable, and the `changeHero()` function.
+
 --- /task ---
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
+language: js
 filename: scripts.js
 line_numbers: true
-line_number_start: 13
-line_highlights: 5-7
+line_number_start: 77
+line_highlights: 78-81,83-90,92,94
 ---
-// Function to display summary
-function displaySummary() {
-  const summaryParagraph = document.querySelector("#summary-paragraph");
+// Change Hero function
+const heroSlides = document.querySelectorAll(".hero-slide");
+var currentHeroIndex = 0;
 
-  summaryParagraph.textContent = `🌟 Meet ${characterName.value}!
-Power: ${characterAbility.value}
-Origin: ${characterOrigin.value}`;
-  ...
+function changeHero(direction) {
+
+  heroSlides[currentHeroIndex].classList.remove("active");
+  currentHeroIndex = currentHeroIndex + direction;
+
+  if (currentHeroIndex < 0) {
+    currentHeroIndex = 2;
+  } else if (currentHeroIndex > 2) {
+    currentHeroIndex = 0;
+  }
+
+  heroSlides[currentHeroIndex].classList.add("active");
 }
 --- /code ---
 
 </div>
 
+<h2 class="c-project-heading--task">Test</h2>
+
 --- task ---
-**Test:** Create a character and check your new summary style appears exactly the way you intended.
+
+Click the left and right hero buttons on the home page and confirm the active image changes each time, wrapping back to the start when needed.
+
 --- /task ---

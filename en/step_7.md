@@ -1,50 +1,36 @@
-<h2 class="c-project-heading--task">Check user input</h2>
+<h2 class="c-project-heading--task">Let the user edit the summary</h2>
+
+Add a function that hides the summary and shows the form again when the user clicks Edit.
 
 --- task ---
-Warn the user if they miss an important part of the form.
---- /task ---
 
---- task ---
-Create an alert message that appears if the user leaves the name, ability, or origin story blank.
+Open `scripts.js` and add the `changeSummary()` function below `displaySummary()`.
+
 --- /task ---
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
+language: js
 filename: scripts.js
 line_numbers: true
-line_number_start: 31
-line_highlights: 2-23
+line_number_start: 25
+line_highlights: 26-29
 ---
-// Function to check the character details form 
-const alertBox = document.querySelector("#alert");
-
-function checkForm(){
-
-  var alertMessage = "";
-
-  if (characterName.value == ""){
-    alertMessage = "Please enter a name"; 
-  } else if (characterAbility.value == "") {
-    alertMessage = "Please choose an ability";
-  } else if (characterOrigin.value == "") {
-    alertMessage = "Please write the origin story";
-  } 
-  
-  if (alertMessage != ""){
-    alertBox.innerText = alertMessage;
-    alertBox.style.display = "block";
-  } else {
-    alertBox.style.display = "none";
-    displaySummary();
-  }
+// Function to edit summary
+function changeSummary() {
+  characterDetails.style.display = "flex";
+  summary.style.display = "none";
 }
 --- /code ---
 
 </div>
 
+<h2 class="c-project-heading--task">Test</h2>
+
 --- task ---
-**Test:** Try clicking **Create** with one field blank and check the correct warning message appears.
+
+Create a superhero, click Edit, and confirm the form appears again so you can change the details.
+
 --- /task ---

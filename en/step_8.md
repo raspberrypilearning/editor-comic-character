@@ -1,51 +1,76 @@
-<h2 class="c-project-heading--task">Light mode theme</h2>
+<h2 class="c-project-heading--task">Check the form before creating</h2>
+
+Warn the user when they miss a field so the summary is only created after the form is complete.
 
 --- task ---
-Add a light mode switch and remember the user’s preference.
+
+Open `character.html` and `scripts.js` to add the warning area and the `checkForm()` function.
+
 --- /task ---
 
---- task ---
-When the switch changes:
-- toggle a `light-mode` class on the `<body>`
-- save the switch state in `localStorage`
-- restore it when the page loads
---- /task ---
+Code snippet 1 updates the form so the Create button runs `checkForm()` and there is a place to show the warning.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
-filename: scripts.js
+language: html
+filename: character.html
 line_numbers: true
-line_number_start: 55
-line_highlights: 1-21
+line_number_start: 40
+line_highlights: 42-43
 ---
-// Create the constant for light mode
-const lightModeSwitch = document.querySelector("#lightModeSwitch");
-
-// Light mode function
-function changeLightMode(){
-  var isLightMode = lightModeSwitch.checked;
-
-  document.body.classList.toggle("light-mode");
-
-  localStorage.setItem("lightMode", isLightMode);
-}
-
-// Check local storage 
-document.addEventListener("DOMContentLoaded", function () {    
-
-  if (localStorage.getItem("lightMode") == "true") {
-    document.body.classList.toggle("light-mode");
-    lightModeSwitch.checked = true;
-  }
-
-});
+        <label for="origin-text">Origin Story:</label>
+        <textarea id="origin-text" placeholder="Add your superhero origin story!"></textarea>
+        <div id="alert"></div>
+        <button onclick="checkForm()">Create</button>
 --- /code ---
 
 </div>
 
+Code snippet 2 adds the JavaScript that checks each field before showing the summary.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 31
+line_highlights: 32-34,36,38-44,46-52
+---
+// Function to check the character details form
+const alertBox = document.querySelector("#alert");
+
+function checkForm() {
+
+  var alertMessage = "";
+
+  if (characterName.value == "") {
+    alertMessage = "Please enter a name";
+  } else if (characterAbility.value == "") {
+    alertMessage = "Please choose an ability";
+  } else if (characterOrigin.value == "") {
+    alertMessage = "Please write the origin story";
+  }
+
+  if (alertMessage != "") {
+    alertBox.innerText = alertMessage;
+    alertBox.style.display = "block";
+  } else {
+    alertBox.style.display = "none";
+    displaySummary();
+  }
+}
+--- /code ---
+
+</div>
+
+<h2 class="c-project-heading--task">Test</h2>
+
 --- task ---
-**Test:** Turn on light mode, refresh the page, and check light mode stays on.
+
+Click Create with one field left blank and confirm a warning appears instead of the summary, then fill every field in and confirm the summary appears.
+
 --- /task ---

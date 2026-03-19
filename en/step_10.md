@@ -1,35 +1,38 @@
-<h2 class="c-project-heading--task">Reflection</h2>
+<h2 class="c-project-heading--task">Add a light mode switch to the character page</h2>
+
+Add the same switch to `character.html` so both pages have the same theme control.
 
 --- task ---
-Reflect on what you built and how your code works.
---- /task ---
 
---- task ---
-Add a short reflection comment at the end of `scripts.js` describing one feature you’re proud of.
+Open `character.html` and add the switch container inside the header, below the navigation links.
+
 --- /task ---
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
-filename: scripts.js
+language: html
+filename: character.html
 line_numbers: true
-line_number_start: 90
-line_highlights: 6-9
+line_number_start: 20
+line_highlights: 20-26
 ---
-  heroSlides[currentHeroIndex].classList.add("active");
-
-}
-
-/* Reflection:
-- Which feature was easiest to build?
-- Which part took the most debugging?
-*/
+      <div class="switch-container">
+        <label class="switch">
+          <input onchange="changeLightMode()" type="checkbox" id="lightModeSwitch">
+          <span class="switch-slider"></span>
+        </label>
+        <span class="switch-label material-symbols-outlined">light_mode</span>
+      </div>
 --- /code ---
 
 </div>
 
+<h2 class="c-project-heading--task">Test</h2>
+
 --- task ---
-**Test:** Show someone your site and explain your favourite feature (or read your reflection back and check it matches what your code does).
+
+Open `character.html` and confirm the same switch now appears in that page header as well.
+
 --- /task ---

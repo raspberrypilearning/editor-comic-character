@@ -1,48 +1,38 @@
-<h2 class="c-project-heading--task">Hero image slider</h2>
+<h2 class="c-project-heading--task">Add a light mode switch to the home page</h2>
+
+Add a switch to `index.html` so the home page has a control for changing the colour theme.
 
 --- task ---
-Let the user click buttons to move through hero images.
---- /task ---
 
---- task ---
-Create a function that:
-- removes the `active` class from the current slide
-- updates the slide index
-- adds `active` to the new slide
+Open `index.html` and add the switch container inside the header, below the navigation links.
+
 --- /task ---
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
-filename: scripts.js
+language: html
+filename: index.html
 line_numbers: true
-line_number_start: 77
-line_highlights: 2-18
+line_number_start: 20
+line_highlights: 20-26
 ---
-// Change Hero function
-const heroSlides = document.querySelectorAll('.hero-slide');
-var currentHeroIndex = 0;
-
-function changeHero(direction) {
-
-  heroSlides[currentHeroIndex].classList.remove("active");
-  currentHeroIndex = currentHeroIndex + direction;
-
-  if (currentHeroIndex < 0){
-    currentHeroIndex = 2;
-  } else if (currentHeroIndex > 2) {
-    currentHeroIndex = 0;
-  }
-
-  heroSlides[currentHeroIndex].classList.add("active");
-
-}
+      <div class="switch-container">
+        <label class="switch">
+          <input onchange="changeLightMode()" type="checkbox" id="lightModeSwitch">
+          <span class="switch-slider"></span>
+        </label>
+        <span class="switch-label material-symbols-outlined">light_mode</span>
+      </div>
 --- /code ---
 
 </div>
 
+<h2 class="c-project-heading--task">Test</h2>
+
 --- task ---
-**Test:** Click the next/previous buttons and check the hero image changes (and loops at the ends).
+
+Click Run and confirm a switch appears in the home page header, even though it does not change the colours yet.
+
 --- /task ---
