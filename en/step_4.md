@@ -12,7 +12,7 @@ Open `scripts.js` and create a `Date` object before setting the footer text.
 
 --- code ---
 ---
-language: js
+language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 1

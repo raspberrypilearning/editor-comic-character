@@ -1,10 +1,8 @@
 <h2 class="c-project-heading--task">Build the character form</h2>
 
-Add the superhero form and summary section to `character.html` so the user can enter details for a new hero.
-
 --- task ---
 
-Open `character.html` and replace the empty `<section>` with form fields for a name, an ability, an origin story, a Create button, and a summary section.
+Open `character.html` and replace the empty `<section>` with this superhero form and summary section.
 
 --- /task ---
 
@@ -15,9 +13,10 @@ Open `character.html` and replace the empty `<section>` with form fields for a n
 language: html
 filename: character.html
 line_numbers: true
-line_number_start: 23
-line_highlights: 23-42
+line_number_start: 22
+line_highlights: 23-40
 ---
+    <main>
       <section id="character-details"> <!--Superhero character details-->
         <label for="name-text">Superhero Name:</label>
         <input type="text" id="name-text">
@@ -35,8 +34,8 @@ line_highlights: 23-42
       <section id="summary-section">
         <h2>Superhero Summary</h2>
         <p id="summary-paragraph"></p>
-        <button onclick="changeSummary()">Edit</button>
       </section>
+    </main>
 --- /code ---
 
 </div>

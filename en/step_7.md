@@ -1,18 +1,41 @@
 <h2 class="c-project-heading--task">Let the user edit the summary</h2>
 
-Add a function that hides the summary and shows the form again when the user clicks Edit.
+Add an Edit button and a function that hides the summary and shows the form again when the user clicks it.
 
 --- task ---
 
-Open `scripts.js` and add the `changeSummary()` function below `displaySummary()`.
+Open `character.html` and `scripts.js` to add the Edit button and the `changeSummary()` function.
 
 --- /task ---
+
+Code snippet 1 adds the Edit button to the summary section.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: js
+language: html
+filename: character.html
+line_numbers: true
+line_number_start: 37
+line_highlights: 40
+---
+      <section id="summary-section">
+        <h2>Superhero Summary</h2>
+        <p id="summary-paragraph"></p>
+        <button onclick="changeSummary()">Edit</button>
+      </section>
+--- /code ---
+
+</div>
+
+Code snippet 2 adds the JavaScript that shows the form again when Edit is clicked.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 25

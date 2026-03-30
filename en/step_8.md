@@ -24,6 +24,8 @@ line_highlights: 35-36
         <textarea id="origin-text" placeholder="Add your superhero origin story!"></textarea>
         <div id="alert"></div>
         <button onclick="checkForm()">Create</button>
+      </section>
+      <section id="summary-section">
 --- /code ---
 
 </div>
@@ -34,11 +36,11 @@ Code snippet 2 adds the JavaScript that checks each field before showing the sum
 
 --- code ---
 ---
-language: js
+language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 31
-line_highlights: 32-34,36,38-44,46-52
+line_highlights: 32,34,36,38-44,46-52
 ---
 // Function to check the character details form
 const alertBox = document.querySelector("#alert");

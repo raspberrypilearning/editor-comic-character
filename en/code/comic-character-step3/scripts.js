@@ -1,6 +1,4 @@
-// Update Copyright Year function 
-const currentDate = new Date();
-document.querySelector("#copyrightYear").innerText = `${currentDate.getFullYear()}`;
+// Update Copyright Year function
 
 // Create constants for superhero form
 
@@ -8,12 +6,12 @@ document.querySelector("#copyrightYear").innerText = `${currentDate.getFullYear(
 
 // Function to edit summary
 
-// Function to check the character details form 
+// Function to check the character details form
 
 // Create the constant for light mode
 
-// Light mode function 
-  
-// Check local storage 
+// Light mode function
+
+// Check local storage
 
 // Change Hero function

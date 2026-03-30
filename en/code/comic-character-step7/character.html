@@ -17,15 +17,8 @@
         <a href="index.html">HOME</a>
         <a href="character.html">CREATE CHARACTER</a>
       </nav>
-      <div class="switch-container">
-        <label class="switch">
-          <input onchange="changeLightMode()" type="checkbox" id="lightModeSwitch">
-          <span class="switch-slider"></span>
-        </label>
-        <span class="switch-label material-symbols-outlined">light_mode</span>
-      </div>
     </header>
-   
+
     <main>
       <section id="character-details"> <!--Superhero character details-->
         <label for="name-text">Superhero Name:</label>
@@ -39,9 +32,7 @@
         </select>
         <label for="origin-text">Origin Story:</label>
         <textarea id="origin-text" placeholder="Add your superhero origin story!"></textarea>
-        <div id="alert"> 
-        </div>
-        <button onclick="checkForm()">Create</button>
+        <button onclick="displaySummary()">Create</button>
       </section>
       <section id="summary-section">
         <h2>Superhero Summary</h2>
@@ -50,7 +41,7 @@
       </section>
     </main>
     <footer>
-      <p> Ⓒ <span id="copyrightYear"></span> - All Rights Reserved</p>
+      <p>Ⓒ <span id="copyrightYear"></span> Malik Johnson - All Rights Reserved</p>
     </footer>
     <script src="scripts.js"></script>
   </body>

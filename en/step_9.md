@@ -1,10 +1,8 @@
 <h2 class="c-project-heading--task">Add a light mode switch to the home page</h2>
 
-Add a switch to `index.html` so the home page has a control for changing the colour theme.
-
 --- task ---
 
-Open `index.html` and add the switch container inside the header, below the navigation links.
+Open `index.html` and paste this switch container inside the header, just after `</nav>` and before `</header>`.
 
 --- /task ---
 
@@ -15,9 +13,13 @@ Open `index.html` and add the switch container inside the header, below the navi
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 20
+line_number_start: 16
 line_highlights: 20-26
 ---
+      <nav class="navbar" id="nav">
+        <a href="index.html">HOME</a>
+        <a href="character.html">CREATE CHARACTER</a>
+      </nav>
       <div class="switch-container">
         <label class="switch">
           <input onchange="changeLightMode()" type="checkbox" id="lightModeSwitch">
@@ -25,6 +27,7 @@ line_highlights: 20-26
         </label>
         <span class="switch-label material-symbols-outlined">light_mode</span>
       </div>
+    </header>
 --- /code ---
 
 </div>
