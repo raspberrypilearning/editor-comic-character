@@ -36,6 +36,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
+  position: relative;
 }
 
 .logo {
@@ -61,6 +63,15 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   padding-right: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:last-child {
+  padding-right: 0;
 }
 
 nav a:hover {
@@ -132,6 +143,7 @@ textarea {
 .switch-container {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .switch {
@@ -280,4 +292,68 @@ body.light-mode {
 .menu-icon {
   display: none;
   cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  width: auto;
+  padding: 8px;
+  background: transparent;
+}
+
+.menu-toggle:hover {
+  background: transparent;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 5px 0;
+  background: var(--text-colour-nav-link);
+}
+
+.light-mode .menu-toggle span {
+  background: var(--text-colour-light-mode-nav);
+}
+
+@media (max-width: 700px) {
+  .header {
+    gap: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 210px;
+    padding: 16px;
+    background: var(--background-colour-header);
+    z-index: 10;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    padding-right: 0;
+  }
+
+  .light-mode .navbar {
+    background: var(--background-colour-light-mode-header);
+  }
 }

@@ -15,8 +15,8 @@ Open `index.html` and add a paragraph inside the empty `<footer>`.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 32
-line_highlights: 33
+line_number_start: 37
+line_highlights: 38
 ---
     <footer>
       <p>Ⓒ <span id="copyrightYear"></span> Malik Johnson - All Rights Reserved</p>

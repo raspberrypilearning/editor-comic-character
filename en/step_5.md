@@ -15,8 +15,8 @@ Open `character.html` and replace the empty `<section>` with form fields for a n
 language: html
 filename: character.html
 line_numbers: true
-line_number_start: 23
-line_highlights: 23-42
+line_number_start: 28
+line_highlights: 28-47
 ---
       <section id="character-details"> <!--Superhero character details-->
         <label for="name-text">Superhero Name:</label>

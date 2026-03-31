@@ -15,8 +15,8 @@ Open `character.html` and add the switch container inside the header, below the 
 language: html
 filename: character.html
 line_numbers: true
-line_number_start: 20
-line_highlights: 20-26
+line_number_start: 25
+line_highlights: 25-31
 ---
       <div class="switch-container">
         <label class="switch">
