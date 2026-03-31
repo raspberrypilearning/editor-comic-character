@@ -1,10 +1,8 @@
 <h2 class="c-project-heading--task">Add a light mode switch to the character page</h2>
 
-Add the same switch to `character.html` so both pages have the same theme control.
-
 --- task ---
 
-Open `character.html` and add the switch container inside the header, below the navigation links.
+Open `character.html` and paste this switch container inside the header, just after `</nav>` and before `</header>`.
 
 --- /task ---
 
@@ -18,6 +16,10 @@ line_numbers: true
 line_number_start: 25
 line_highlights: 25-31
 ---
+      <nav class="navbar" id="nav">
+        <a href="index.html">HOME</a>
+        <a href="character.html">CREATE CHARACTER</a>
+      </nav>
       <div class="switch-container">
         <label class="switch">
           <input onchange="changeLightMode()" type="checkbox" id="lightModeSwitch">
@@ -25,6 +27,7 @@ line_highlights: 25-31
         </label>
         <span class="switch-label material-symbols-outlined">light_mode</span>
       </div>
+    </header>
 --- /code ---
 
 </div>

@@ -12,11 +12,11 @@ Open `scripts.js`, store the form elements in constants, and create a `displaySu
 
 --- code ---
 ---
-language: js
+language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 5
-line_highlights: 6-7,9-11,14-15,17-19,21-22
+line_highlights: 6-7,9-11,14-15,17-19,21-23
 ---
 // Create constants for superhero form
 const summary = document.querySelector("#summary-section");
@@ -45,6 +45,6 @@ function displaySummary() {
 
 --- task ---
 
-Fill in the form, click Create, and confirm the form disappears while the summary section shows the details you entered.
+Fill in the form, click **Create**, and confirm the form disappears while the summary section shows the details you entered.
 
 --- /task ---

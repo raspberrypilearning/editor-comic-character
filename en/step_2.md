@@ -1,10 +1,8 @@
 <h2 class="c-project-heading--task">Add the footer to the home page</h2>
 
-Add a copyright message to the footer of `index.html` so the home page has space for the current year.
-
 --- task ---
 
-Open `index.html` and add a paragraph inside the empty `<footer>`.
+Open `index.html` and add this paragraph inside the empty `<footer>` so the home page has space for the current year.
 
 --- /task ---
 

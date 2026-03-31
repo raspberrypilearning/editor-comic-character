@@ -1,10 +1,10 @@
-// Update Copyright Year function 
+// Update Copyright Year function
 const currentDate = new Date();
 document.querySelector("#copyrightYear").innerText = currentDate.getFullYear();
 
 // Create constants for superhero form
-const characterDetails = document.querySelector("#character-details");
 const summary = document.querySelector("#summary-section");
+const characterDetails = document.querySelector("#character-details");
 
 const characterName = document.querySelector("#name-text");
 const characterAbility = document.querySelector("#ability-choice");
@@ -14,7 +14,7 @@ const characterOrigin = document.querySelector("#origin-text");
 function displaySummary() {
   const summaryParagraph = document.querySelector("#summary-paragraph");
 
-  summaryParagraph.textContent = `Your superhero name is ${characterName.value}. 
+  summaryParagraph.textContent = `Your superhero name is ${characterName.value}.
   Their ability is ${characterAbility.value}.
   Their origin story is ${characterOrigin.value}.`;
 
@@ -56,7 +56,7 @@ function checkForm() {
 const lightModeSwitch = document.querySelector("#lightModeSwitch");
 
 // Light mode function
-function changeLightMode(){
+function changeLightMode() {
   var isLightMode = lightModeSwitch.checked;
 
   document.body.classList.toggle("light-mode");
@@ -64,8 +64,8 @@ function changeLightMode(){
   localStorage.setItem("lightMode", isLightMode);
 }
 
-// Check local storage 
-document.addEventListener("DOMContentLoaded", function () {    
+// Check local storage
+document.addEventListener("DOMContentLoaded", function () {
 
   if (localStorage.getItem("lightMode") == "true") {
     document.body.classList.toggle("light-mode");
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Change Hero function
-const heroSlides = document.querySelectorAll('.hero-slide');
+const heroSlides = document.querySelectorAll(".hero-slide");
 var currentHeroIndex = 0;
 
 function changeHero(direction) {
@@ -83,14 +83,13 @@ function changeHero(direction) {
   heroSlides[currentHeroIndex].classList.remove("active");
   currentHeroIndex = currentHeroIndex + direction;
 
-  if (currentHeroIndex < 0){
+  if (currentHeroIndex < 0) {
     currentHeroIndex = 2;
   } else if (currentHeroIndex > 2) {
     currentHeroIndex = 0;
   }
 
   heroSlides[currentHeroIndex].classList.add("active");
-
 }
 
 const menuToggle = document.getElementById("menu-toggle");

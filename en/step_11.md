@@ -12,11 +12,11 @@ Open `scripts.js` and add the light mode switch constant, the `changeLightMode()
 
 --- code ---
 ---
-language: js
+language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 55
-line_highlights: 56,58-60,62,64-65,67-68,70-73,75
+line_highlights: 56,59-60,62,64-65,68,70-73,75
 ---
 // Create the constant for light mode
 const lightModeSwitch = document.querySelector("#lightModeSwitch");

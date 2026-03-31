@@ -2,7 +2,7 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   margin: 0;
 }
-  
+
 body {
   background: var(--background-colour-body);
 }
@@ -98,7 +98,7 @@ button:hover {
 }
 
 textarea {
-  height: 100px; 
+  height: 100px;
 }
 
 #summary-section {
@@ -173,7 +173,7 @@ input:checked + .switch-slider {
 input:checked + .switch-slider:before {
   transform: translateX(26px);
 }
-  
+
 .switch-label {
   margin-left: 10px;
   padding-right: 10px;

@@ -1,10 +1,8 @@
 <h2 class="c-project-heading--task">Add the footer to the character page</h2>
 
-Add the same copyright message to `character.html` so both pages use the same footer layout.
-
 --- task ---
 
-Open `character.html` and add the paragraph inside the empty `<footer>`.
+Open `character.html` and add this paragraph inside the empty `<footer>` so both pages use the same footer layout.
 
 --- /task ---
 

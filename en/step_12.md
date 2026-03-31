@@ -12,11 +12,11 @@ Open `scripts.js` and add the slider list, the current index variable, and the `
 
 --- code ---
 ---
-language: js
+language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 77
-line_highlights: 78-81,83-90,92,94
+line_highlights: 78-79,81,83-90,92-93
 ---
 // Change Hero function
 const heroSlides = document.querySelectorAll(".hero-slide");
@@ -43,7 +43,7 @@ function changeHero(direction) {
 
 --- task ---
 
-Run your code, then open index. 
+Run your code, then open `index.html`.
 
 Click the left and right hero buttons on the home page and confirm the active image changes each time, wrapping back to the start when needed.
 
