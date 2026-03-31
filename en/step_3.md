@@ -13,8 +13,8 @@ Open `character.html` and add this paragraph inside the empty `<footer>` so both
 language: html
 filename: character.html
 line_numbers: true
-line_number_start: 27
-line_highlights: 28
+line_number_start: 32
+line_highlights: 33
 ---
     <footer>
       <p>Ⓒ <span id="copyrightYear"></span> Malik Johnson - All Rights Reserved</p>

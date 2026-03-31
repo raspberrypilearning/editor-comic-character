@@ -13,8 +13,8 @@ Open `index.html` and paste this switch container inside the header, just after 
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 16
-line_highlights: 20-26
+line_number_start: 25
+line_highlights: 25-31
 ---
       <nav class="navbar" id="nav">
         <a href="index.html">HOME</a>

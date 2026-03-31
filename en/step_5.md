@@ -13,8 +13,8 @@ Open `character.html` and replace the empty `<section>` with this superhero form
 language: html
 filename: character.html
 line_numbers: true
-line_number_start: 22
-line_highlights: 23-40
+line_number_start: 28
+line_highlights: 28-47
 ---
     <main>
       <section id="character-details"> <!--Superhero character details-->
