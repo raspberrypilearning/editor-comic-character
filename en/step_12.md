@@ -1,50 +1,26 @@
-<h2 class="c-project-heading--task">Control the hero slider</h2>
+<h2 class="c-project-heading--task">Challenge</h2>
 
-Use JavaScript to move the hero slider backwards and forwards when the navigation buttons are clicked.
+Improve your superhero website by adding your own ideas, such as more powers, more hero images, or extra character details.
 
---- task ---
+Try one of these ideas:
 
-Open `scripts.js` and add the slider list, the current index variable, and the `changeHero()` function.
+### Step 1
 
---- /task ---
+Add more options to the ability menu.
 
-<div class="c-project-code">
 
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 77
-line_highlights: 78-79,81,83-90,92-93
----
-// Change Hero function
-const heroSlides = document.querySelectorAll(".hero-slide");
-var currentHeroIndex = 0;
+### Step 2
 
-function changeHero(direction) {
+Add another form field, such as a home city or team name.
 
-  heroSlides[currentHeroIndex].classList.remove("active");
-  currentHeroIndex = currentHeroIndex + direction;
 
-  if (currentHeroIndex < 0) {
-    currentHeroIndex = 2;
-  } else if (currentHeroIndex > 2) {
-    currentHeroIndex = 0;
-  }
+### Step 3
 
-  heroSlides[currentHeroIndex].classList.add("active");
-}
---- /code ---
+Add more images to the hero slider and update the JavaScript to handle the new total.
 
-</div>
 
 <h2 class="c-project-heading--task">Test</h2>
 
---- task ---
+### Step 4
 
-Run your code, then open `index.html`.
-
-Click the left and right hero buttons on the home page and confirm the active image changes each time, wrapping back to the start when needed.
-
---- /task ---
+Run your upgraded project and confirm your new feature appears and works the way you planned.

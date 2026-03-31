@@ -6,12 +6,12 @@ version: 4
 listed: false
 copyedit: false
 last_tested: '2021-03-26'
+landing: true
 steps:
-- title: You will make
 - title: Add the footer to the home page
+- title: Add the footer to the character page
   completion:
     - engaged
-- title: Add the footer to the character page
 - title: Show the current year
 - title: Build the character form
 - title: Show the superhero summary
@@ -20,10 +20,10 @@ steps:
 - title: Add a light mode switch to the home page
 - title: Add a light mode switch to the character page
 - title: Save the light mode choice
-- title: Control the hero slider
   completion:
     - internal
-- title: Challenge
-  challenge: true
+- title: Control the hero slider
   completion:
     - external
+- title: Challenge
+  challenge: true

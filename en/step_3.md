@@ -1,32 +1,31 @@
-<h2 class="c-project-heading--task">Add the footer to the character page</h2>
+<h2 class="c-project-heading--task">Show the current year</h2>
 
---- task ---
+Use JavaScript to fill the `copyrightYear` span with the current year automatically.
 
-Open `character.html` and add this paragraph inside the empty `<footer>` so both pages use the same footer layout.
+### Step 1
 
---- /task ---
+Open `scripts.js` and create a `Date` object before setting the footer text.
+
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: character.html
+language: javascript
+filename: scripts.js
 line_numbers: true
-line_number_start: 32
-line_highlights: 33
+line_number_start: 1
+line_highlights: 2-3
 ---
-    <footer>
-      <p>Ⓒ <span id="copyrightYear"></span> Malik Johnson - All Rights Reserved</p>
-    </footer>
+// Update Copyright Year function
+const currentDate = new Date();
+document.querySelector("#copyrightYear").innerText = currentDate.getFullYear();
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
 
---- task ---
+### Step 2
 
-Open `character.html` in the preview and confirm it now shows the same copyright message in the footer, with the year still blank for now.
-
---- /task ---
+Click Run and confirm the current year appears in the footer on both pages.

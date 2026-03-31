@@ -1,49 +1,47 @@
-<h2 class="c-project-heading--task">Build the character form</h2>
+<h2 class="c-project-heading--task">Show the superhero summary</h2>
 
---- task ---
+Use JavaScript to turn the form answers into a superhero summary when the user clicks Create.
 
-Open `character.html` and replace the empty `<section>` with this superhero form and summary section.
+### Step 1
 
---- /task ---
+Open `scripts.js`, store the form elements in constants, and create a `displaySummary()` function that updates the paragraph and swaps the visible section.
+
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: character.html
+language: javascript
+filename: scripts.js
 line_numbers: true
-line_number_start: 28
-line_highlights: 28-47
+line_number_start: 5
+line_highlights: 6-7,9-11,14-15,17-19,21-23
 ---
-    <main>
-      <section id="character-details"> <!--Superhero character details-->
-        <label for="name-text">Superhero Name:</label>
-        <input type="text" id="name-text">
-        <label for="ability-choice">Ability:</label>
-        <select id="ability-choice">
-          <option value="">Choose an option</option>
-          <option value="Flight">Flying</option>
-          <option value="Invisibility">Invisibility</option>
-          <option value="Time travel">Time travel</option>
-        </select>
-        <label for="origin-text">Origin Story:</label>
-        <textarea id="origin-text" placeholder="Add your superhero origin story!"></textarea>
-        <button onclick="displaySummary()">Create</button>
-      </section>
-      <section id="summary-section">
-        <h2>Superhero Summary</h2>
-        <p id="summary-paragraph"></p>
-      </section>
-    </main>
+// Create constants for superhero form
+const summary = document.querySelector("#summary-section");
+const characterDetails = document.querySelector("#character-details");
+
+const characterName = document.querySelector("#name-text");
+const characterAbility = document.querySelector("#ability-choice");
+const characterOrigin = document.querySelector("#origin-text");
+
+// Function to display summary
+function displaySummary() {
+  const summaryParagraph = document.querySelector("#summary-paragraph");
+
+  summaryParagraph.textContent = `Your superhero name is ${characterName.value}. 
+  Their ability is ${characterAbility.value}. 
+  Their origin story is ${characterOrigin.value}.`;
+
+  characterDetails.style.display = "none";
+  summary.style.display = "flex";
+}
 --- /code ---
 
 </div>
 
 <h2 class="c-project-heading--task">Test</h2>
 
---- task ---
+### Step 2
 
-Click Run, open `character.html`, and confirm you can see a name field, an ability menu, an origin story box, and a Create button.
-
---- /task ---
+Fill in the form, click **Create**, and confirm the form disappears while the summary section shows the details you entered.
