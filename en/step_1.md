@@ -1,21 +1,29 @@
-<h2 class="c-project-heading--task">You will make</h2>
+<h2 class="c-project-heading--task">Add the footer to the home page</h2>
 
---- task ---
+### Step 1
 
-Create an interactive superhero website with a character creator, a light mode switch, and a hero image slider.
+Open `index.html` and add this paragraph inside the empty `<footer>` so the home page has space for the current year.
 
---- /task ---
 
-Explore the finished example below to see how the slider, character page, and light mode switch work together.
+<div class="c-project-code">
 
-<div class="c-project-output">
-  <iframe
-    src="https://editor.raspberrypi.org/en/embed/viewer/editor-comic-character-complete"
-    width="100%"
-    height="700"
-    frameborder="0"
-    marginwidth="0"
-    marginheight="0"
-    allowfullscreen>
-  </iframe>
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 37
+line_highlights: 38
+---
+    <footer>
+      <p>Ⓒ <span id="copyrightYear"></span> Malik Johnson - All Rights Reserved</p>
+    </footer>
+--- /code ---
+
 </div>
+
+<h2 class="c-project-heading--task">Test</h2>
+
+### Step 2
+
+Click Run and confirm the footer now shows a copyright message on the home page, even though the year is still blank.

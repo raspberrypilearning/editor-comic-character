@@ -1,14 +1,13 @@
-<h2 class="c-project-heading--task">Let the user edit the summary</h2>
+<h2 class="c-project-heading--task">Check the form before creating</h2>
 
-Add an Edit button and a function that hides the summary and shows the form again when the user clicks it.
+Warn the user when they miss a field so the summary is only created after the form is complete.
 
---- task ---
+### Step 1
 
-Open `character.html` and `scripts.js` to add the Edit button and the `changeSummary()` function.
+Open `character.html` and `scripts.js` to add the warning area and the `checkForm()` function.
 
---- /task ---
 
-Code snippet 1 adds the Edit button to the summary section.
+Code snippet 1 updates the form so the Create button runs `checkForm()` and there is a place to show the warning.
 
 <div class="c-project-code">
 
@@ -17,19 +16,20 @@ Code snippet 1 adds the Edit button to the summary section.
 language: html
 filename: character.html
 line_numbers: true
-line_number_start: 37
-line_highlights: 40
+line_number_start: 33
+line_highlights: 35-36
 ---
-      <section id="summary-section">
-        <h2>Superhero Summary</h2>
-        <p id="summary-paragraph"></p>
-        <button onclick="changeSummary()">Edit</button>
+        <label for="origin-text">Origin Story:</label>
+        <textarea id="origin-text" placeholder="Add your superhero origin story!"></textarea>
+        <div id="alert"></div>
+        <button onclick="checkForm()">Create</button>
       </section>
+      <section id="summary-section">
 --- /code ---
 
 </div>
 
-Code snippet 2 adds the JavaScript that shows the form again when Edit is clicked.
+Code snippet 2 adds the JavaScript that checks each field before showing the summary.
 
 <div class="c-project-code">
 
@@ -38,13 +38,31 @@ Code snippet 2 adds the JavaScript that shows the form again when Edit is clicke
 language: javascript
 filename: scripts.js
 line_numbers: true
-line_number_start: 25
-line_highlights: 26-29
+line_number_start: 31
+line_highlights: 32,34,36,38-44,46-52
 ---
-// Function to edit summary
-function changeSummary() {
-  characterDetails.style.display = "flex";
-  summary.style.display = "none";
+// Function to check the character details form
+const alertBox = document.querySelector("#alert");
+
+function checkForm() {
+
+  var alertMessage = "";
+
+  if (characterName.value == "") {
+    alertMessage = "Please enter a name";
+  } else if (characterAbility.value == "") {
+    alertMessage = "Please choose an ability";
+  } else if (characterOrigin.value == "") {
+    alertMessage = "Please write the origin story";
+  }
+
+  if (alertMessage != "") {
+    alertBox.innerText = alertMessage;
+    alertBox.style.display = "block";
+  } else {
+    alertBox.style.display = "none";
+    displaySummary();
+  }
 }
 --- /code ---
 
@@ -52,8 +70,6 @@ function changeSummary() {
 
 <h2 class="c-project-heading--task">Test</h2>
 
---- task ---
+### Step 2
 
-Create a superhero, click Edit, and confirm the form appears again so you can change the details.
-
---- /task ---
+Click Create with one field left blank and confirm a warning appears instead of the summary, then fill every field in and confirm the summary appears.
