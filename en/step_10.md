@@ -2,7 +2,7 @@
 
 Use JavaScript and local storage to switch the page theme and remember the user’s choice.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `scripts.js` and add the light mode switch constant, the `changeLightMode()` function, and a `DOMContentLoaded` listener.
 
@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Run your code, then turn on light mode, refresh the page, and confirm the lighter colours stay enabled with the switch still checked.

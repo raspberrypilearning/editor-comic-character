@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Build the character form</h2>
 
-### Step 1
-
 Open `character.html` and replace the empty `<section>` with this superhero form and summary section.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-code">
 
@@ -39,8 +38,6 @@ line_highlights: 28-47
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Click Run, open `character.html`, and confirm you can see a name field, an ability menu, an origin story box, and a Create button.

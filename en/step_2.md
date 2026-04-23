@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Add the footer to the character page</h2>
 
-### Step 1
-
 Open `character.html` and add this paragraph inside the empty `<footer>` so both pages use the same footer layout.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-code">
 
@@ -22,8 +21,6 @@ line_highlights: 33
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Open `character.html` in the preview and confirm it now shows the same copyright message in the footer, with the year still blank for now.

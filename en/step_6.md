@@ -2,7 +2,7 @@
 
 Add an Edit button and a function that hides the summary and shows the form again when the user clicks it.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `character.html` and `scripts.js` to add the Edit button and the `changeSummary()` function.
 
@@ -49,8 +49,6 @@ function changeSummary() {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Create a superhero, click Edit, and confirm the form appears again so you can change the details.
