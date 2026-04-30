@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Add the footer to the home page</h2>
 
-### Step 1
-
 Open `index.html` and add this paragraph inside the empty `<footer>` so the home page has space for the current year.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-code">
 
@@ -22,8 +21,6 @@ line_highlights: 38
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Click Run and confirm the footer now shows a copyright message on the home page, even though the year is still blank.

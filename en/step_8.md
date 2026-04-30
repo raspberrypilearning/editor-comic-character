@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Add a light mode switch to the home page</h2>
 
-### Step 1
-
 Open `index.html` and paste this switch container inside the header, just after `</nav>` and before `</header>`.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-code">
 
@@ -31,8 +30,6 @@ line_highlights: 25-31
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Click Run and confirm a switch appears in the home page header, even though it does not change the colours yet.

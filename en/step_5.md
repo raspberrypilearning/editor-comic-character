@@ -2,7 +2,7 @@
 
 Use JavaScript to turn the form answers into a superhero summary when the user clicks Create.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `scripts.js`, store the form elements in constants, and create a `displaySummary()` function that updates the paragraph and swaps the visible section.
 
@@ -40,8 +40,6 @@ function displaySummary() {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Fill in the form, click **Create**, and confirm the form disappears while the summary section shows the details you entered.

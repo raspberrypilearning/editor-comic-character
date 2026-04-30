@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Add a light mode switch to the character page</h2>
 
-### Step 1
-
 Open `character.html` and paste this switch container inside the header, just after `</nav>` and before `</header>`.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 <div class="c-project-code">
 
@@ -31,8 +30,6 @@ line_highlights: 25-31
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Open `character.html` and confirm the same switch now appears in that page header as well.

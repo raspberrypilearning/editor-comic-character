@@ -2,7 +2,7 @@
 
 Use JavaScript to fill the `copyrightYear` span with the current year automatically.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `scripts.js` and create a `Date` object before setting the footer text.
 
@@ -24,8 +24,6 @@ document.querySelector("#copyrightYear").innerText = currentDate.getFullYear();
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
-
-### Step 2
+## Now run your code
 
 Click Run and confirm the current year appears in the footer on both pages.
