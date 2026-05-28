@@ -2,8 +2,6 @@
 
 Open `character.html` and add this paragraph inside the empty `<footer>` so both pages use the same footer layout.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-code">
 
 --- code ---

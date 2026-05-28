@@ -2,8 +2,6 @@
 
 Open `index.html` and add this paragraph inside the empty `<footer>` so the home page has space for the current year.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-code">
 
 --- code ---
