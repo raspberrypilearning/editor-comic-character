@@ -2,8 +2,6 @@
 
 Open `index.html` and paste this switch container inside the header, just after `</nav>` and before `</header>`.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 <div class="c-project-code">
 
 --- code ---
