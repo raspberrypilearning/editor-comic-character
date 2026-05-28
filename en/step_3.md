@@ -2,8 +2,6 @@
 
 Use JavaScript to fill the `copyrightYear` span with the current year automatically.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Open `scripts.js` and create a `Date` object before setting the footer text.
 
 
