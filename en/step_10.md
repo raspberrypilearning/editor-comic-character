@@ -2,8 +2,6 @@
 
 Use JavaScript and local storage to switch the page theme and remember the user’s choice.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Open `scripts.js` and add the light mode switch constant, the `changeLightMode()` function, and a `DOMContentLoaded` listener.
 
 
