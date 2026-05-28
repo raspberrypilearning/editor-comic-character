@@ -2,8 +2,6 @@
 
 Warn the user when they miss a field so the summary is only created after the form is complete.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Open `character.html` and `scripts.js` to add the warning area and the `checkForm()` function.
 
 
