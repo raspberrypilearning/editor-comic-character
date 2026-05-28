@@ -2,8 +2,6 @@
 
 Use JavaScript to turn the form answers into a superhero summary when the user clicks Create.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Open `scripts.js`, store the form elements in constants, and create a `displaySummary()` function that updates the paragraph and swaps the visible section.
 
 
