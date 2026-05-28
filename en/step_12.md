@@ -2,7 +2,6 @@
 
 Improve your superhero website by adding your own ideas, such as more powers, more hero images, or extra character details.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 ## Step 1
 
