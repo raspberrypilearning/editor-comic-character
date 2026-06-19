@@ -5,8 +5,6 @@ Improve your superhero website by adding your own ideas, such as more powers, mo
 
 ## Step 1
 
-Try one of these ideas:
-
 Add more options to the ability menu.
 
 ## Step 2
