@@ -1,44 +1,23 @@
-<h2 class="c-project-heading--task">Check the form before creating</h2>
+## Check the form before creating
 
 Warn the user when they miss a field so the summary is only created after the form is complete.
 
 Open `character.html` and `scripts.js` to add the warning area and the `checkForm()` function.
 
-
 Code snippet 1 updates the form so the Create button runs `checkForm()` and there is a place to show the warning.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: character.html
-line_numbers: true
-line_number_start: 33
-line_highlights: 35-36
----
+```html filename="character.html" line_numbers="true" line_number_start="33" line_highlights="35-36"
         <label for="origin-text">Origin Story:</label>
         <textarea id="origin-text" placeholder="Add your superhero origin story!"></textarea>
         <div id="alert"></div>
         <button onclick="checkForm()">Create</button>
       </section>
       <section id="summary-section">
---- /code ---
-
-</div>
+```
 
 Code snippet 2 adds the JavaScript that checks each field before showing the summary.
 
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 31
-line_highlights: 32,34,36,38-44,46-52
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="31" line_highlights="32,34,36,38-44,46-52"
 // Function to check the character details form
 const alertBox = document.querySelector("#alert");
 
@@ -62,9 +41,7 @@ function checkForm() {
     displaySummary();
   }
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

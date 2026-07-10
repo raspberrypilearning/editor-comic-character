@@ -1,20 +1,10 @@
-<h2 class="c-project-heading--task">Control the hero slider</h2>
+## Control the hero slider
 
 Use JavaScript to move the hero slider backwards and forwards when the navigation buttons are clicked.
 
 Open `scripts.js` and add the slider list, the current index variable, and the `changeHero()` function.
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 77
-line_highlights: 78-79,81,83-90,92-93
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="77" line_highlights="78-79,81,83-90,92-93"
 // Change Hero function
 const heroSlides = document.querySelectorAll(".hero-slide");
 var currentHeroIndex = 0;
@@ -32,9 +22,7 @@ function changeHero(direction) {
 
   heroSlides[currentHeroIndex].classList.add("active");
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

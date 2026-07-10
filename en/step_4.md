@@ -1,17 +1,8 @@
-<h2 class="c-project-heading--task">Build the character form</h2>
+## Build the character form
 
 Open `character.html` and replace the empty `<section>` with this superhero form and summary section.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: character.html
-line_numbers: true
-line_number_start: 28
-line_highlights: 28-47
----
+```html filename="character.html" line_numbers="true" line_number_start="28" line_highlights="28-47"
     <main>
       <section id="character-details"> <!--Superhero character details-->
         <label for="name-text">Superhero Name:</label>
@@ -32,9 +23,7 @@ line_highlights: 28-47
         <p id="summary-paragraph"></p>
       </section>
     </main>
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
