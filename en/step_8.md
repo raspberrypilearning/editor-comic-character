@@ -1,17 +1,8 @@
-<h2 class="c-project-heading--task">Add a light mode switch to the home page</h2>
+## Add a light mode switch to the home page
 
 Open `index.html` and paste this switch container inside the header, just after `</nav>` and before `</header>`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 25
-line_highlights: 25-31
----
+```html filename="index.html" line_numbers="true" line_number_start="25" line_highlights="25-31"
       <nav class="navbar" id="nav">
         <a href="index.html">HOME</a>
         <a href="character.html">CREATE CHARACTER</a>
@@ -24,9 +15,7 @@ line_highlights: 25-31
         <span class="switch-label material-symbols-outlined">light_mode</span>
       </div>
     </header>
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

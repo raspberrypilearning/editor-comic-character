@@ -1,20 +1,10 @@
-<h2 class="c-project-heading--task">Show the superhero summary</h2>
+## Show the superhero summary
 
 Use JavaScript to turn the form answers into a superhero summary when the user clicks Create.
 
 Open `scripts.js`, store the form elements in constants, and create a `displaySummary()` function that updates the paragraph and swaps the visible section.
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 5
-line_highlights: 6-7,9-11,14-15,17-19,21-23
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="5" line_highlights="6-7,9-11,14-15,17-19,21-23"
 // Create constants for superhero form
 const summary = document.querySelector("#summary-section");
 const characterDetails = document.querySelector("#character-details");
@@ -34,9 +24,7 @@ function displaySummary() {
   characterDetails.style.display = "none";
   summary.style.display = "flex";
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 

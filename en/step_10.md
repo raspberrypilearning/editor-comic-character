@@ -1,20 +1,10 @@
-<h2 class="c-project-heading--task">Save the light mode choice</h2>
+## Save the light mode choice
 
 Use JavaScript and local storage to switch the page theme and remember the user’s choice.
 
 Open `scripts.js` and add the light mode switch constant, the `changeLightMode()` function, and a `DOMContentLoaded` listener.
 
-
-<div class="c-project-code">
-
---- code ---
----
-language: javascript
-filename: scripts.js
-line_numbers: true
-line_number_start: 55
-line_highlights: 56,59-60,62,64-65,68,70-73,75
----
+```javascript filename="scripts.js" line_numbers="true" line_number_start="55" line_highlights="56,59-60,62,64-65,68,70-73,75"
 // Create the constant for light mode
 const lightModeSwitch = document.querySelector("#lightModeSwitch");
 
@@ -36,9 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 
